@@ -1,0 +1,207 @@
+week2 commads..
+touch file1 file2
+ 1998  cat> file1
+ 1999  touch file1 file2
+ 2000  cat file1
+ 2001  cat file2
+ 2002  cat file1 file2
+ 2003  grep "second" file2
+ 2004  grep "w" file2
+ 2005  grep -n"w" file2
+ 2006  grep -n "w" file2
+ 2007  grep -h "w" file2
+ 2008  grep -h "second" file1
+ 2009  grep -h "second" file2
+ 2010  grep -n "second" file2
+ 2011  grep -v "second" file2
+ 2012  grep -e "second" file2
+ 2013  grep -e "sd" file2
+ 2014  grep -e "s" file2
+ 2015  grep -e "s" -e "w" file2
+ 2016  grep -o "second" file2
+ 2017  grep -n -o "second" file2
+ 2018  cat month
+ 2019  cat days
+ 2020  sort days
+ 2021  cat days
+ 2022  sort days
+ 2023  sort -M days
+ 2024  sort -d days
+ 2025  sort -n days
+ 2026  cat num
+ 2027  sort num
+ 2028  sort -n num
+ 2029  sort -u num
+ 2030  sort -n num
+ 2031  history
+
+
+week2 commads(terminal) references...
+user@vsk:~$ touch file1 file2
+user@vsk:~$ cat file1
+my self saikrishna 
+rgukt basara
+user@vsk:~$ cat file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ cat file1 file2
+my self saikrishna 
+rgukt basara
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep "second" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep "w" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -n"w" file2
+^Z                              
+[1]+  Stopped                 grep --color=auto -n"w" file2
+user@vsk:~$ grep -n "w" file2
+1:This is my second week of it_sworkshop lab
+user@vsk:~$ grep -h "w" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -h "second" file1
+user@vsk:~$ grep -h "second" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -n "second" file2
+1:This is my second week of it_sworkshop lab
+user@vsk:~$ grep -v "second" file2
+user@vsk:~$ grep -e "second" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -e "sd" file2
+user@vsk:~$ grep -e "s" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -e "s" -e "w" file2
+This is my second week of it_sworkshop lab
+user@vsk:~$ grep -o "second" file2
+second
+user@vsk:~$ grep -n -o "second" file2
+1:second
+user@vsk:~$ cat month
+cat: month: No such file or directory
+user@vsk:~$ cat days
+Monday
+Wednesday
+Friday
+Saturday
+Sunday
+Tuesday
+Thursday
+user@vsk:~$ sort days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ cat days
+Monday
+Wednesday
+Friday
+Saturday
+Sunday
+Tuesday
+Thursday
+user@vsk:~$ sort days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ sort days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ sort -M days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ sort -d days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ sort -n days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+user@vsk:~$ cat num
+1
+56
+7
+89
+45
+09
+34
+
+user@vsk:~$ sort num
+
+09
+1
+34
+45
+56
+7
+89
+user@vsk:~$ sort num
+
+1
+34
+45
+56
+7
+89
+9
+user@vsk:~$ sort num
+
+1
+34
+45
+56
+7
+89
+9
+user@vsk:~$ sort -n num
+
+1
+7
+9
+34
+45
+56
+89
+user@vsk:~$ sort -u num
+
+1
+34
+45
+56
+7
+89
+9
+user@vsk:~$ sort -n num
+
+1
+7
+9
+34
+45
+56
+89
+

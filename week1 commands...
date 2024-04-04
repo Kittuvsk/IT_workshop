@@ -1,0 +1,129 @@
+commands used ....
+ 1999  touch file1 file2
+ 2000  whoami
+ 2001  id
+ 2002  groups
+ 2003  passwd
+ 2004  who
+ 2005  last
+ 2006  nslookup rgukt.ac.in
+ 2007  cp
+ 2008  cp file1 file2
+ 2009  cat>file2
+ 2010  cat file1
+ 2011  cat file2
+ 2012  cat file1 file2
+ 2013  cp file1 file2
+ 2014  cp file2
+ 2015  rm file2
+ 2016  cat file2
+ 2017  cat> file2
+ 2018  mv file2 file1
+ 2019  cat file1
+ 2020  chown file1 file2
+ 2021  cd
+ 2022  pwd /Home
+ 2023  1961 whoami
+ 2024  whoami
+ 2025  echo "student"
+ 2026  chown file1 file2
+ 2027  chown file file2
+ 2028  cd
+ 2029  pwd /home
+ 2030  history
+
+
+
+
+
+
+week1 commands(terminal)...
+
+user@vsk:~$ touch file1 file2
+user@vsk:~$ whoami
+user
+user@vsk:~$ id
+uid=1000(user) gid=1000(user) groups=1000(user),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
+user@vsk:~$ groups
+user adm cdrom sudo dip plugdev lpadmin lxd sambashare
+user@vsk:~$ passwd
+Changing password for user.
+Current password: 
+New password: 
+BAD PASSWORD: The password is just rotated old one
+New password: 
+Retype new password: 
+passwd: password updated successfully
+user@vsk:~$ who
+user     tty2         2024-04-04 11:41 (tty2)
+user@vsk:~$ last
+user     tty2         tty2             Thu Apr  4 11:41   still logged in
+reboot   system boot  6.5.0-27-generic Thu Apr  4 11:41   still running
+user     tty2         tty2             Sat Mar 30 17:22 - down   (01:00)
+reboot   system boot  5.13.0-35-generi Wed Mar 16 13:02 - 13:09  (00:06)
+
+wtmp begins Wed Mar 16 13:02:23 2022
+user@vsk:~$ nslookup rgukt.ac.in
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+** server can't find rgukt.ac.in: SERVFAIL
+
+user@vsk:~$ cp
+cp: missing file operand
+Try 'cp --help' for more information.
+user@vsk:~$ cp file1 file2
+user@vsk:~$ cat>file2
+        
+^Z
+[1]+  Stopped                 cat > file2
+user@vsk:~$ cat>file2
+^Z
+[2]+  Stopped                 cat > file2
+user@vsk:~$ cat file1
+My self sk
+rgukt basar
+
+user@vsk:~$ cat file2
+user@vsk:~$ cat file2
+This is my second file2
+
+user@vsk:~$ cat file1 file2
+My self sk
+rgukt basar
+
+This is my second file2
+
+user@vsk:~$ cp file1 file2
+user@vsk:~$ cp file2
+cp: missing destination file operand after 'file2'
+Try 'cp --help' for more information.
+user@vsk:~$ rm file2
+user@vsk:~$ cat file2
+cat: file2: No such file or directory
+user@vsk:~$ cat> file2
+^Z
+[3]+  Stopped                 cat > file2
+user@vsk:~$ mv file2 file1
+user@vsk:~$ cat file1
+user@vsk:~$ chown file1 file2
+chown: invalid user: ‘file1’
+user@vsk:~$ cd
+user@vsk:~$ pwd /Home
+/home/user
+user@vsk:~$ 1961 whoami
+1961: command not found
+user@vsk:~$ whoami
+user
+user@vsk:~$ echo "student"
+student
+user@vsk:~$ chown file1 file2
+chown: invalid user: ‘file1’
+user@vsk:~$ chown file file2
+chown: invalid user: ‘file’
+user@vsk:~$ cd
+user@vsk:~$ pwd /home
+/home/user
+user@vsk:~$ history
+
+
